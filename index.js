@@ -1,15 +1,8 @@
-function movie() {
-    console.log('The Matrix')
+function price(){
+    let total = 0
+    for (let value of arguments)
+        total += value
+    return total
 }
 
-movie()
-
-const car = function(){
-    console.log('Tesla')
-}
-
-car()
-
-const truck = car
-
-truck()
+console.log(price(10 ,20 ,40 ,50))
